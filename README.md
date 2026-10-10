@@ -1,4 +1,4 @@
-# Contract Intelligence — recovered source snapshot
+# Contract Intelligence 
 
 **An AI agent for contract analysis and management, with document extraction, clause assessment and a human approval workflow.**
 
