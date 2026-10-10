@@ -1,27 +1,50 @@
-# Contract Intelligence — Incomplete Source Recovery
+# Contract Intelligence — recovered source snapshot
 
-**بالعربية:** هذه نسخة توثيق لاسترجاع مشروع Contract Intelligence من ملف ZIP ناقص. المشروع يحتاج الملفات المفقودة قبل تشغيله.
+**AI-assisted contract review with document extraction, clause assessment and a human approval workflow.**
 
-> **Incomplete archive and pending source upload.** The provided nested archive was truncated. We recovered 289 Python source files plus configuration examples locally, but the workspace disconnected before those files were committed to this repository. This checkout cannot run the application.
+The recovered Django applications ingest contract documents, extract text/OCR evidence, identify clauses, compare them with configured standards and record findings for review and reporting.
 
-## What was recovered
+**بالعربية:** نظام لتحليل العقود، استخراج النصوص والبنود، مقارنتها بالمعايير، وإعداد ملاحظات وتوصيات مع مراجعة بشرية.
 
-The prepared recovery package contains Python application modules under `apps/`, a sanitized `.env.example`, `.gitignore` and documentation. Recovered Python files passed syntax parsing. This does not establish that the complete application runs.
+> **This snapshot is incomplete and cannot currently be started as a Django project.** The uploaded inner archive `aji-contract-intelligence-v1.zip` ends before its ZIP directory and before essential project files. Only complete entries with validated checksums were recovered.
 
-## Missing startup files
+## Features visible in the recovered code
 
-- `manage.py`.
-- Root settings and URL configuration.
-- WSGI/ASGI and Celery startup configuration.
-- Dependency manifest such as `requirements.txt` or `pyproject.toml`.
-- Templates and static assets.
+- Contract/document records, processing tasks and extracted evidence.
+- OCR preprocessing, rotation/skew handling, line recovery and coordinates.
+- Configurable AI orchestration, clause classification and assessment.
+- Standards, findings, human review workflow and notifications.
+- Reporting, audit records, account management and application tests.
 
-## How to make it runnable
+These descriptions come from the recovered implementation. Full application startup and external services could not be verified.
 
-Provide a new ZIP of the actual project folder containing the complete source and dependency manifest. Exclude `.venv/`, `__pycache__/`, production secrets, databases and the unrelated `bolt_kling/` folder.
+## Recovered modules
 
-Once the missing configuration and dependencies are available, the installation and startup commands can be checked against the actual project. No unverified startup command is presented for this incomplete archive.
+| Folder | Purpose |
+| --- | --- |
+| `apps/accounts/` | Account management and permissions |
+| `apps/contracts/`, `apps/documents/` | Contracts, documents, extraction and OCR |
+| `apps/ai/`, `apps/analysis/` | AI orchestration, classification and findings |
+| `apps/standards/` | Review standards |
+| `apps/workflow/`, `apps/notifications/` | Review state and notifications |
+| `apps/reports/`, `apps/audit/`, `apps/common/` | Reports, audit and shared components |
 
-## Data handling
+289 Python files and two supplied metadata files were recovered. The virtual environment, Celery state, credentials and unrelated video-production assets were excluded.
 
-The recovery excludes virtual environments, caches, private environment files and unrelated media. Environment examples contain variable names with blank values. No open-source license is granted unless the rights holder adds one.
+## Missing files and startup
+
+At least the following were not present in the recoverable archive:
+
+- `manage.py` and the dependency manifest (`requirements.txt` or equivalent).
+- Project settings, root URLs, WSGI/ASGI and Celery configuration.
+- `templates/` and `static/`.
+
+Guessing dependencies or writing new settings would not restore the original application. No working installation command is claimed for this snapshot.
+
+To supply the complete project, create a new ZIP from the original folder, excluding `.venv`, `venv`, `__pycache__`, `.celery`, `.pytest_cache`, `.env`, private documents/databases and unrelated `bolt_kling` video files. Keep source, migrations, configuration templates, `manage.py`, the dependency manifest, templates and static assets.
+
+Wait for archive creation to finish, verify that the ZIP opens and includes those files, then upload it. The complete project's exact migration, account-creation, worker and startup commands can then be documented and tested.
+
+## Verification and publication
+
+291 complete files passed ZIP CRC validation. Python syntax can be checked, but Django startup, UI rendering, migrations and tests require the missing project files. This recovered folder is preserved for review and should not be published as a complete, runnable application.
