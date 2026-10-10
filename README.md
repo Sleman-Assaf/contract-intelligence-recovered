@@ -1,15 +1,16 @@
 # Contract Intelligence — recovered source snapshot
 
-**AI-assisted contract review with document extraction, clause assessment and a human approval workflow.**
+**An AI agent for contract analysis and management, with document extraction, clause assessment and a human approval workflow.**
 
-The recovered Django applications ingest contract documents, extract text/OCR evidence, identify clauses, compare them with configured standards and record findings for review and reporting.
+Contract Intelligence includes an AI agent that analyzes contracts and supports their management through document processing, clause assessment, findings, review workflows and reporting. The recovered Django applications ingest contract documents, extract text/OCR evidence, identify clauses, compare them with configured standards and record findings for human review.
 
-**بالعربية:** نظام لتحليل العقود، استخراج النصوص والبنود، مقارنتها بالمعايير، وإعداد ملاحظات وتوصيات مع مراجعة بشرية.
+**بالعربية:** نظام يضم وكيل ذكاء اصطناعي (AI Agent) لتحليل العقود وإدارتها، واستخراج النصوص والبنود، مقارنتها بالمعايير، وإعداد الملاحظات والتوصيات وتنظيم سير المراجعة والمتابعة مع اعتماد بشري.
 
 > **This snapshot is incomplete and cannot currently be started as a Django project.** The uploaded inner archive `aji-contract-intelligence-v1.zip` ends before its ZIP directory and before essential project files. Only complete entries with validated checksums were recovered.
 
 ## Features visible in the recovered code
 
+- AI agent for contract analysis and management, coordinating document processing, assessment and the review workflow.
 - Contract/document records, processing tasks and extracted evidence.
 - OCR preprocessing, rotation/skew handling, line recovery and coordinates.
 - Configurable AI orchestration, clause classification and assessment.
